@@ -51,7 +51,13 @@ section{
 	flex-direction: column;
 	align-items: center;
 
-	padding: 125px 100px;
+	/* padding: 125px 100px; */
+	padding: 10px
+}
+
+section.feature-list {
+	padding: 0;
+	padding-top: 50px;
 }
 
 @media (max-width: 1000px){
@@ -60,6 +66,11 @@ section{
 		padding: 100px 50px;
 	}
 
+section.feature-list {
+	padding: 0;
+	padding-top: 50px;
+}
+
 }
 
 @media (max-width: 600px){
@@ -67,6 +78,11 @@ section{
 	section{
 		padding: 80px 30px;
 	}
+
+section.feature-list {
+	padding: 0;
+	padding-top: 50px;
+}
 
 }
 
@@ -158,7 +174,7 @@ header nav li:last-child{
 
 .hero{
 	position: relative;
-	color: #3f51b5;
+	/* color: #3f51b5; */
 	text-align: center;
 	padding: 10px;
 }
@@ -182,7 +198,13 @@ video {
 	justify-content: space-around;
 	padding: 4px 0px;
 	border: 2px solid;
-	border-radius: 30px
+	border-radius: 30px;
+	color: white;
+	background-color: #3f51b5;
+}
+
+a {
+	color: rgb(63, 81, 245);
 }
 
 .chrome-btn:hover {
@@ -354,11 +376,11 @@ video {
  	Reviews Section
 --------------------*/
 
-.reviews{
+.feature-list{
 	background-color: #fff;
 }
 
-.reviews .quote{
+.feature-list .quote{
 	text-align: center;
 	width: 80%;
     font-size: 22px;
@@ -368,22 +390,22 @@ video {
     padding: 0;
 }
 
-.reviews .author{
+.feature-list .author{
     font-size: 18px;
     margin-bottom: 50px;
 }
 
-.reviews .author:last-child{
+.feature-list .author:last-child{
     margin-bottom: 0;
 }
 
 @media (max-width: 1000px){
 
-	.reviews .quote{
+	.feature-list .quote{
 		font-size: 20px;
 	}
 
-	.reviews .author{
+	.feature-list .author{
 	    font-size: 16px;
 	}
 
